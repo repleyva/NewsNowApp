@@ -1,4 +1,4 @@
-export interface NewsDataType {
+export interface NewsEntity {
     article_id: string;
     title: string;
     link: string;
@@ -21,11 +21,11 @@ export interface NewsDataType {
     ai_region: string[];
     ai_org: null;
     sentiment: string;
-    sentiment_stats: Sentimentstats;
+    sentiment_stats: SentimentstatsEntity;
     duplicate: boolean;
   }
   
-  interface Sentimentstats {
+  interface SentimentstatsEntity {
     positive: number;
     neutral: number;
     negative: number;
